@@ -33,6 +33,8 @@ Composer
 |App will return the scrabble score for a given character|"a"|1|
 |App will return a combined score of all letters for multi-letter words|"funk"|11|
 |App will return correct score regardless of capitalization|"Funk"|11|
+|App will ignore non-alphabetic characters|"Funk9!"|11|
+|App can accept an array of words and return total score|["that", "funk"]|18|
 
 
 ## Known Bugs

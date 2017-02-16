@@ -26,6 +26,14 @@
         function test_score_uppercase() {
             $this->check("Funk", 11);
         }
+
+        function test_score_nonAlphabetic() {
+            $this->check("Funk9!", 11);
+        }
+
+        function test_score_arrayOfWords() {
+            $this->check(["that", "funk"], 18);
+        }
     }
 
 ?>
