@@ -14,6 +14,7 @@
 
         function score($input) {
             $score = 0;
+            $input = strtolower($input);
             for ($i=0; $i<strlen($input); $i++) {
                 $score += $this->scoreLetter($input[$i]);
             }
